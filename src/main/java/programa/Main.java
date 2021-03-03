@@ -26,6 +26,9 @@ public class Main {
 
         //Suma total de la primera diagonal 
         System.out.println("\nSuma de la primera diagonal: " + cuadrado1.sumaPrimeraDiagonal());
+
+        //Suma total de la diagonal inversa
+        System.out.println("\nSuma de la diagonal inversa: " + cuadrado1.sumaDiagonalInversa());
     }
 
 }
