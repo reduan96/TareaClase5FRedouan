@@ -5,6 +5,8 @@
  */
 package programa;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author redu2
@@ -31,9 +33,18 @@ public class Main {
         System.out.println("\nSuma de la diagonal inversa: " + cuadrado1.sumaDiagonalInversa());
 
         //Prueba del método del cuadrado mágico
-        System.out.println("\n"+cuadrado1.esCuadradoMagico(cuadrado1.sumaColumna(0),
+        System.out.println("\n" + cuadrado1.esCuadradoMagico(cuadrado1.sumaColumna(0),
                 cuadrado1.sumaColumna(0), cuadrado1.sumaPrimeraDiagonal(),
                 cuadrado1.sumaDiagonalInversa()));
+
+        //Creación de 15 objetos CuadradoMagico y los almacenamos en un arraylist
+        ArrayList<CuadradoMagico> listaCuadrados = new ArrayList<>();
+
+        for (int i = 0; i < 15; i++) {
+
+            listaCuadrados.add(new CuadradoMagico());
+        }
+
     }
 
 }
