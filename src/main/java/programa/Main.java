@@ -29,6 +29,11 @@ public class Main {
 
         //Suma total de la diagonal inversa
         System.out.println("\nSuma de la diagonal inversa: " + cuadrado1.sumaDiagonalInversa());
+
+        //Prueba del método del cuadrado mágico
+        System.out.println("\n"+cuadrado1.esCuadradoMagico(cuadrado1.sumaColumna(0),
+                cuadrado1.sumaColumna(0), cuadrado1.sumaPrimeraDiagonal(),
+                cuadrado1.sumaDiagonalInversa()));
     }
 
 }

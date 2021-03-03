@@ -163,4 +163,15 @@ public class CuadradoMagico {
         }
         return suma;
     }
+
+    public String esCuadradoMagico(int sumaF, int sumaC, int sumaD, int sumaDinv) {
+
+        if (sumaF == sumaC && sumaC == sumaD && sumaD == sumaDinv) {
+
+            return "Es un cuadrado mágico!!";
+        } else {
+
+            return "No es un cuadrado mágico";
+        }
+    }
 }
