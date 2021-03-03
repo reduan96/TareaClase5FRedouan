@@ -17,8 +17,12 @@ public class Main {
         CuadradoMagico cuadrado1 = new CuadradoMagico();
         //Muestra por consola el objeto creado
         cuadrado1.imprimirMatriz();
-        //Suma total de los número de la fila indicada(fila entre 0 y 2)
+
+        //Suma total de los números de la fila indicada(fila entre 0 y 2)
         System.out.println("\nSuma de la primera fila: " + cuadrado1.sumaFila(0));
+
+        //Suma total de los números de la columna indicada(columna entre 0 y 2)
+        System.out.println("\nSuma de la primera columna: " + cuadrado1.sumaColumna(0));
 
     }
 

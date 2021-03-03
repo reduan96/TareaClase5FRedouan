@@ -93,4 +93,29 @@ public class CuadradoMagico {
         }
         return suma;
     }
+
+    //Método de suma total de una columna
+    public int sumaColumna(int numColum) {
+
+        int suma = 0;
+
+        if (numColum < 0 || numColum > 2) {
+
+            return -1;
+        } else {
+
+            for (int i = 0; i < matriz.length; i++) {
+
+                for (int j = 0; j < matriz[i].length; j++) {
+
+                    if (j == numColum) {
+
+                        suma += matriz[i][j];
+                    }
+                }
+            }
+        }
+        return suma;
+    }
+
 }
