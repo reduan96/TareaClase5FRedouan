@@ -118,4 +118,26 @@ public class CuadradoMagico {
         return suma;
     }
 
+    public int sumaPrimeraDiagonal() {
+
+        int suma = 0;
+
+        for (int i = 0; i < matriz.length; i++) {
+
+            for (int j = 0; j < matriz[i].length; j++) {
+
+                if (i == 0 && j == 2) {
+
+                    suma += matriz[i][j];
+                } else if (i == 1 && j == 1) {
+
+                    suma += matriz[i][j];
+                } else if (i == 2 && j == 0) {
+
+                    suma += matriz[i][j];
+                }
+            }
+        }
+        return suma;
+    }
 }

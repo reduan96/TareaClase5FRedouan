@@ -24,6 +24,8 @@ public class Main {
         //Suma total de los números de la columna indicada(columna entre 0 y 2)
         System.out.println("\nSuma de la primera columna: " + cuadrado1.sumaColumna(0));
 
+        //Suma total de la primera diagonal 
+        System.out.println("\nSuma de la primera diagonal: " + cuadrado1.sumaPrimeraDiagonal());
     }
 
 }
