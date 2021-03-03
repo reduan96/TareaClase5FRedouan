@@ -5,6 +5,7 @@
  */
 package programa;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -13,8 +14,8 @@ import java.util.Random;
  */
 public class CuadradoMagico {
 
-    private int[][] matriz;
-    private static Random aleatorio = new Random();
+    private final int[][] matriz;
+    private final static Random aleatorio = new Random();
 
     public CuadradoMagico() {
 
@@ -28,4 +29,39 @@ public class CuadradoMagico {
             }
         }
     }
+
+    public int[][] getMatriz() {
+        return matriz;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 73 * hash + Arrays.deepHashCode(this.matriz);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final CuadradoMagico other = (CuadradoMagico) obj;
+        if (!Arrays.deepEquals(this.matriz, other.matriz)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "CuadradoMagico{" + "matriz=" + matriz + '}';
+    }
+    
 }
